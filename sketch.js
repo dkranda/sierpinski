@@ -12,7 +12,11 @@ function setup()
   background(200);
   translate(wt / 2, ht / 2);
   fill(50);
+  setupVerticesInput();
+}
 
+function setupVerticesInput()
+{
   const verticesInput = document.getElementById('vertices');
 
   verticesInput.addEventListener('change', (event) =>
@@ -30,7 +34,6 @@ function setup()
     }
   });
 }
-
 
 function draw()
 {
