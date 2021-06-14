@@ -48,16 +48,6 @@ function drawNewestMiddlePoint()
   circle((numberOfPoints - 2) * lastMiddlePoint.x, (numberOfPoints - 2) * lastMiddlePoint.y, 1);
 }
 
-function drawMiddlePoints()
-{
-  beginShape(POINTS);
-  for (var i = 0; i < middlePoints.length; i++)
-  {
-    vertex(middlePoints[i].x, middlePoints[i].y);
-  }
-  endShape();
-}
-
 function addNextMiddlePoint()
 {
   var lastMiddlePoint = middlePoints[middlePoints.length - 1];
