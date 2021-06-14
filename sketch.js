@@ -41,8 +41,11 @@ function draw()
   {
     return;
   }
-  drawNewestMiddlePoint();
-  addNextMiddlePoint();
+  for (var i = 0; i < 50; i++)
+  {
+    drawNewestMiddlePoint();
+    addNextMiddlePoint();
+  }
 }
 
 function drawNewestMiddlePoint()
